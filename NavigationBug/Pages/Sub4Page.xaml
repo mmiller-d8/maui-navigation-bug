@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationBug.Pages.Sub4Page"
+             Shell.TabBarIsVisible="False"
+             Title="Sub4Page">
+    <Grid>
+        <VerticalStackLayout Style="{StaticResource PageContainerStyle}">
+            <Label 
+                Text="This is the fourth SUB page" 
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text="Clicking this button should take you back to the start page." 
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text="If at first you don't fail, try try again.  Keep going through the cycle until you get a null reference exception.  It took me about 10-15 iterations." 
+                HorizontalOptions="Center" />
+
+            <Button Text="Go" Command="{Binding NavigateCommand}" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

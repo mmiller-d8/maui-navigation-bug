@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationBug.Pages.StartPage"
+             Title="StartPage">
+    <Grid>
+        <VerticalStackLayout Style="{StaticResource PageContainerStyle}">
+            <Label 
+                Text="This is the start page"
+                TextType="Html"
+                HorizontalOptions="Center" />
+            <Button Text="Go" Command="{Binding NavigateCommand}" />
+        </VerticalStackLayout>
+    </Grid>
+    
+</ContentPage>

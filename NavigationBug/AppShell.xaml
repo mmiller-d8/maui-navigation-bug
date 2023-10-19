@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="NavigationBug.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:NavigationBug"
+    xmlns:pages="clr-namespace:NavigationBug.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:StartPage}"
+        Route="{x:Static local:ShellRoutes.Start}" />
+
+    <TabBar>
+        <Tab
+            SemanticProperties.Description="First Tab"
+            Title="Tab 1">
+            <ShellContent
+                ContentTemplate="{DataTemplate pages:Tab1Page}"
+                Route="{x:Static local:ShellRoutes.Tab1}" />
+        </Tab>
+        <Tab
+            SemanticProperties.Description="Second Tab"
+            Title="Tab 2">
+            <ShellContent
+                ContentTemplate="{DataTemplate pages:Tab2Page}"
+                Route="{x:Static local:ShellRoutes.Tab2}" />
+        </Tab>
+    </TabBar>
+
+</Shell>
+
